@@ -123,9 +123,14 @@ body{
 
 .container {
     position: relative;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #ccc; /* Apenas para visualização */
     float: right;
-    /*margin-right: 20px;  Adiciona uma margem à direita da imagem */
+}
+.container img {
+    max-width: 100%; /* Garante que a imagem seja responsiva e não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .apresentacao_conteudo_titulo_paragrafo a{
@@ -165,5 +170,11 @@ body{
         width: 100%; /* Utilize 100% para ocupar toda a largura disponível */
         max-width: none; /* Remova a largura máxima se houver */
         padding: 20px; /* Adiciona preenchimento interno ao conteúdo */
+    }
+
+    .container {
+        margin-right: 0; /* Remove a margem à direita da imagem em telas menores */
+        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+        float: none; /* Remove o alinhamento à direita */
     }
 }

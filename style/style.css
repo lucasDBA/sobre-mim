@@ -136,21 +136,28 @@ body{
 } */
 
 /* Deixando Responsivo */
-@media (max-width: 1300px){
-    .cabecalho{
+@media (max-width: 1300px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabecalho {
         padding: 10%;
     }
     
-    .cabecalho_menu{
+    .cabecalho_menu {
         justify-content: center;
+        gap: 20px; /* Ajuste o espaçamento entre os itens do menu se necessário */
     }
 
-    .apresentacao{
-    flex-direction: column-reverse;
-    padding: 8%;
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 8%;
     }
 
-    .apresentacao_conteudo{
-        width: auto;
+    .apresentacao_conteudo {
+        width: 100%; /* Utilize 100% para ocupar toda a largura disponível */
+        max-width: none; /* Remova a largura máxima se houver */
     }
 }

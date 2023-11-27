@@ -136,7 +136,7 @@ body{
 }
 
 /* Deixando Responsivo */
-@media (max-width: 1300px){
+@media (max-width: 720px){
     .cabecalho{
         padding: 10%;
     }

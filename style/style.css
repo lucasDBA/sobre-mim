@@ -12,7 +12,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body{
@@ -128,11 +128,6 @@ body{
     border: 1px solid #ccc; /* Apenas para visualização */
     float: right;
 }
-.container img {
-    max-width: 100%; /* Garante que a imagem seja responsiva e não ultrapasse a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
 .apresentacao_conteudo_titulo_paragrafo a{
     text-decoration: none;
     color: var(--cor-tercearia);
@@ -170,11 +165,5 @@ body{
         width: 100%; /* Utilize 100% para ocupar toda a largura disponível */
         max-width: none; /* Remova a largura máxima se houver */
         padding: 20px; /* Adiciona preenchimento interno ao conteúdo */
-    }
-
-    .container {
-        margin-right: 0; /* Remove a margem à direita da imagem em telas menores */
-        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
-        float: none; /* Remove o alinhamento à direita */
     }
 }

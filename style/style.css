@@ -12,7 +12,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -20,8 +19,6 @@ body{
     box-sizing: border-box;
     background-color:var(--cor-primaria);
     color: var(--cor-secundaria);
-    margin: 0;
-    padding: 0;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -139,19 +136,12 @@ body{
 
 /* Deixando Responsivo */
 @media (max-width: 1300px) {
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Adiciona overflow-x: hidden para evitar rolagem horizontal */
-    }
-
     .cabecalho {
         padding: 10%;
     }
     
     .cabecalho_menu {
         justify-content: center;
-        gap: 20px; /* Ajuste o espaçamento entre os itens do menu se necessário */
     }
 
     .apresentacao {
@@ -162,7 +152,7 @@ body{
     }
 
     .apresentacao_conteudo {
-        width: 100%; /* Utilize 100% para ocupar toda a largura disponível */
+        width: auto; /* Utilize 100% para ocupar toda a largura disponível */
         max-width: none; /* Remova a largura máxima se houver */
         padding: 20px; /* Adiciona preenchimento interno ao conteúdo */
     }

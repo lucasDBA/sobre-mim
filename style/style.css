@@ -20,6 +20,10 @@ body{
     box-sizing: border-box;
     background-color:var(--cor-primaria);
     color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .cabecalho{
     padding: 3% 0% 0% 15%;
@@ -138,6 +142,7 @@ body{
     body {
         margin: 0;
         padding: 0;
+        overflow-x: hidden; /* Adiciona overflow-x: hidden para evitar rolagem horizontal */
     }
 
     .cabecalho {
@@ -152,10 +157,13 @@ body{
     .apresentacao {
         flex-direction: column-reverse;
         padding: 8%;
+        border: 2px solid var(--cor-tercearia); /* Adiciona uma borda ao redor da .apresentacao */
+        border-radius: 8px; /* Adiciona borda arredondada, se desejar */
     }
 
     .apresentacao_conteudo {
         width: 100%; /* Utilize 100% para ocupar toda a largura disponível */
         max-width: none; /* Remova a largura máxima se houver */
+        padding: 20px; /* Adiciona preenchimento interno ao conteúdo */
     }
 }

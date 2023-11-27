@@ -121,7 +121,7 @@ body{
     position: relative;
     width: 400px; /* Defina a largura desejada para o contêiner */
     height: 400px; /* Defina a altura desejada para o contêiner */
-    border: 1SSpx solid #ccc; /* Apenas para visualização */
+    border: 1px solid #ccc; /* Apenas para visualização */
     float: right;
     /*margin-right: 20px;  Adiciona uma margem à direita da imagem */
 }
